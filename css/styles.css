@@ -12,9 +12,9 @@
    --footer-text-color: rgba(255, 255, 255, 0.6);
    --header-border-color: #ECECEC;
 }
-/**{
+*{
  outline: 1px solid red;
-}*/
+}
 
 h1,
 h2,
@@ -297,6 +297,7 @@ body {
   padding-bottom: 94px;
 }
 .hero-container {
+  display: block;
   width: calc((100% - 90px) / 4);
   background-color: var(--primary-background-color);
   border-radius: 0 0 4px 4px;
@@ -351,7 +352,16 @@ body {
   border-bottom: 1px solid var(--header-border-color);
   margin-bottom: 94px;
 }
+.header-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+}
 .nav-btn {
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   font-family: inherit;
@@ -365,9 +375,28 @@ body {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.work-portfolio:nth-child(3n) {
+  margin-bottom: 0;
+}
+
+.work-portfolio:nth-last-child(3n) {
+margin-right: 0;
+}
+.work-portfolio {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  
+  
+
+}
 .work-title {
-  padding-top: 20px;
-  padding-bottom: 4px;
+ 
 
   color: var(--primary-text-color);
   font-weight: 700;
@@ -378,23 +407,20 @@ body {
   text-decoration: none;
   }
 .work-pre-title {
-  padding-bottom: 20px;
+  
 
   color: var(--tetriary-text-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
+
 .work {
  text-decoration: none;
   }
-.header-button {
-  padding-bottom: 16px;
-  margin-bottom: 34px;
-}
+
 .portfolio-photo {
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
 }
-border-radius
